@@ -23,6 +23,15 @@ body {
   display: flow-root;
 }
 
+.central-container {
+    width: min(1000px, 60%);
+    min-height: 95vh;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
 pre,
 blockquote,
 img {
@@ -62,14 +71,6 @@ img {
 }
 
 
-.central-container {
-    width: min(1000px, 60%);
-    min-height: 95vh;
-    margin: 30px auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 
 .central-container img {
   display: block;
@@ -102,4 +103,16 @@ code {
   background: #f4f4f4;
   padding: 2px 4px;
   border-radius: 4px;
+}
+
+@media only screen and (max-width: 600px) {
+    .central-container {
+        min-width: 90vw;
+        max-width: 100vw;
+        margin: 10px auto;
+    }
+
+    ul {
+        margin: 0;
+    }
 }
