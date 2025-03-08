@@ -1,0 +1,105 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.main-page {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+.central-container {
+  max-width: 801px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flow-root;
+}
+
+pre,
+blockquote,
+img {
+  max-width: 100%;
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #444;
+  width: 100%;
+}
+
+h6 {
+ margin: 0;
+}
+
+a {
+  color: #849dae;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+  border-radius: 5px;
+}
+
+
+.central-container {
+    width: min(1000px, 60%);
+    min-height: 95vh;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.central-container img {
+  display: block;
+  margin: 10px auto; /* Center-align when no other image is next to it */
+}
+
+.central-container img.vertical-image {
+  display: inline-block;  /* Ensures vertical photos are inline when there is another next to them */
+}
+
+.vertical-image {
+  max-width: 48%;  /* Adjust size of vertical images */
+  display: inline-block;  /* Allows images to be displayed side by side */
+  vertical-align: top;  /* Ensures they align properly when side by side */
+  margin: 0 auto !important;
+}
+
+ul,
+ol {
+  margin: 10px 0 10px 20px;
+}
+
+li {
+  margin-bottom: 5px;
+}
+
+
+code {
+  font-family: "Courier New", Courier, monospace;
+  background: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 4px;
+}

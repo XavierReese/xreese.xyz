@@ -1,0 +1,54 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    padding: 20px 20px 10px 20px; /* Add space below header text */
+    color: black;
+    position: relative;
+    margin-top: 20px;
+}
+
+.navbar::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 2.5%;
+    width: 95%; /* Subtle underline shorter than the container width */
+    height: 2px;
+    background-color: black;
+}
+
+.navbar .brand {
+    font-size: 1.7em;
+    font-weight: bold;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links a {
+    color: black;
+    text-decoration: none;
+    font-size: 1em;
+}
+
+.navbar .nav-links a:hover {
+    text-decoration: underline;
+}
+
+
+
+.text-body {
+  margin: 0 40px;
+  margin-top: 20px;
+}
